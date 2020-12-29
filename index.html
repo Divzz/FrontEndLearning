@@ -85,16 +85,12 @@
             </div>
             <div class="col-12 col-sm align-self-center">
                 <a role="button" class="btn btn-block nav-link btn-warning"
-                data-toggle="tooltip" data-html="true"  title="Or Call us at  <br><strong>+852 12345678</strong>"
-                data-placement="bottom" href="#reservationForm">Reserve Table</a>
+                data-placement="bottom" data-toggle="modal" data-target="#reservationModal">Reserve Table</a>
             </div>
         </div>
     </header>
 
-
-
     <div class="container">
-
         <div class="row row-content">
             <div class="col">
                 <div id="mycarousel" class="carousel slide" data-ride="carousel">
@@ -175,6 +171,67 @@
         </div>
     </div>
 
+    <div id="reservationModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Reserve A Table </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form id="reservationForm">
+                        <div class="form-group row align-items-center">
+                            <label for="guest_count" class="col-sm-3 col-form-label">Number of Guests</label>
+                            <div class="col col-sm-4">
+                                <div class="mb-1 form-check-inline">
+                                    <input class="form-check-input" type="radio"  name="guest_count" id="inlineRadio1" value="1">
+                                    <label class="form-check-label" for="inlineRadio1">1</label>
+                                    <input class="form-check-input" type="radio"  name="guest_count" id="inlineRadio2" value="2">
+                                    <label class="form-check-label" for="inlineRadio2">2</label>
+                                    <input class="form-check-input" type="radio"  name="guest_count" id="inlineRadio3" value="3">
+                                    <label class="form-check-label" for="inlineRadio3">3</label>
+                                    <input class="form-check-input" type="radio"  name="guest_count" id="inlineRadio4" value="4">
+                                    <label class="form-check-label" for="inlineRadio4">4</label>
+                                    <input class="form-check-input" type="radio"  name="guest_count" id="inlineRadio5" value="5">
+                                    <label class="form-check-label" for="inlineRadio5">5</label>
+                                    <input class="form-check-input" type="radio"  name="guest_count" id="inlineRadio6" value="6">
+                                    <label class="form-check-label" for="inlineRadio6">6</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row align-items-center">
+                            <label for="Section" class="col-sm-3 col-form-label"> Section</label>
+                            <div class="btn-group btn-group-toggle mb-1 col-sm-4" data-toggle="buttons" >
+                                <label class="btn btn-primary active">
+                                  <input type="radio" name="options" id="option1" autocomplete="off" checked> Non Smoking
+                                </label>
+                                <label class="btn btn-primary">
+                                  <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+                                </label>
+                              </div>
+                        </div>
+                        <div class="form-group row align-items-center">
+                            <label for="Date" class="col-sm-3 col-form-label"> Date and Time </label>
+                            <div class="form-group mb-1 col-sm-4">
+                                <input type="text" class="form-control" id="date" name="date" placeholder="Date" style="display:flex; flex-direction: row;">
+                            </div>
+                            <div class="form-group mb-1 col-sm-4 order-sm-last">
+                                <input type="text" class="form-control" id="time" name="time" placeholder="Time" style="display:flex; flex-direction: row;">
+                            </div>
+                        </div>
+                        <div class="form-group row align-items-center">
+                            <div class="offset-md-3 col-md-10">
+                                <button type="submit" class="btn btn-primary">Reserve</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="card mx-auto w-50  border-secondary">
         <h4 class="card-header bg-warning text-white">
             Reserve a Table
@@ -234,11 +291,11 @@
                 <div class="col-7 col-sm-5">
                     <h5>Our Address</h5>
                     <address>
-		              121, Clear Water Bay Road<br>
-		              Clear Water Bay, Kowloon<br>
-		              HONG KONG<br>
-                      <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
-		              <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+		              The Beautiful Road<br>
+		              Bangalore, Karnataka<br>
+		              INDIA<br>
+                      <i class="fa fa-phone fa-lg"></i>: +91 1234 5678<br>
+		              <i class="fa fa-fax fa-lg"></i>: +91 8765 4321<br>
 		              <i class="fa fa-envelope fa-lg"></i>:  <a href="mailto:confusion@food.net">confusion@food.net</a>
 		           </address>
                 </div>
