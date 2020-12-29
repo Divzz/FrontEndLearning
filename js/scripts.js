@@ -10,3 +10,9 @@
          $("#carouselButton").children("span").addClass('fa-pause');                    
      }
  });
+
+ 
+ $("#reserveButton").on("click",function(){
+    console.log("reserveButton clicked!");
+    $('#reservationModal').modal('toggle');
+ });
