@@ -13,6 +13,5 @@
 
  
  $("#reserveButton").on("click",function(){
-    console.log("reserveButton clicked!");
     $('#reservationModal').modal('toggle');
  });

@@ -46,6 +46,10 @@ body {
 .modal-body {
   background-color: #D1C4E9; }
 
+.form-check-label {
+  margin-left: -3px;
+  padding-right: 10px; }
+
 .carousel {
   background: #512DA8; }
   .carousel .carousel-item {
